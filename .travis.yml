@@ -45,4 +45,6 @@ before_script:
 
 script:
   - bash -c "echo $DISPLAY"
+  - python setup.py build
+  - sudo python setup.py install
   - tox -e $TOX_ENV
